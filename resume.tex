@@ -1,0 +1,166 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% --- FONT AND ICONS ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{inter} 
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% --- MARGINS ---
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in}
+\setlength{\footskip}{4.1pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- SECTION FORMATTING ---
+\titleformat{\section}{
+  \vspace{-5pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% --- CUSTOM COMMANDS ---
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      \textbf{#5}  #6 \\
+\vspace{-2.5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+	\href{https://www.balajileninrajan.dev}{\LARGE Balaji Leninrajan} \\ \vspace{2pt}
+	\small
+	\href{https://github.com/BalajiLeninrajan}{\faGithub \ github.com/BalajiLeninrajan} $|$
+	\href{mailto:bleninra@uwaterloo.ca}{\faEnvelope \ bleninra@uwaterloo.ca} $|$
+	\href{https://linkedin.com/in/balaji-leninrajan}{\faLinkedin \ linkedin.com/in/balaji-leninrajan}
+	\vspace{-10pt}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Waterloo}{2023 -- Present}
+{Bachelor of Software Engineering}{Waterloo, ON, Canada}
+{Coursework:}{Operating Systems, Compilers, Data Structures, Algorithms, Databases, Computer Architecture}
+\resumeSubHeadingListEnd
+
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Shopify} $|$ Production Engineering Intern $|$ Edge Infrastructure}{\emph{September 2025 -- December 2025}}
+\resumeItemListStart
+\resumeItem{Deployed Terraform-based Cloudflare WAF rules to safeguard service migrations, achieving 100\% monitoring coverage (up from 96.4\%) and ensuring zero-downtime transitions across critical services.}
+\resumeItem{Accelerated incident resolution by utilizing Prometheus for metrics analysis and documenting recovery procedures in new operational playbooks.}
+\resumeItem{Extended Shopify's Cloudflare Ruby gem to query custom hostnames and metadata.}
+\resumeItem{Supported migration from Nginx to Envoy, including porting Lua scripts to Go, to improve edge routing.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Shopify} $|$ Software Engineering Intern $|$ Communications Platform Team}{\emph{January 2025 -- April 2025}}
+\resumeItemListStart
+\resumeItem{Contributed to a high-scale communications platform using React and Rails, orchestrating 4M+ monthly emails and push notifications across multiple Shopify services and teams.}
+\resumeItem{Implemented an approval workflow system for emails that empowers users in marketing automation, resulting in an 80\% reduction in faulty campaigns due to human error.}
+\resumeItem{Designed a polymorphic Rails concern for approval workflows, abstracting shared logic across multiple models, reducing duplicate code and improving maintainability.}
+\resumeItem{Optimized error monitoring by implementing intelligent Bugsnag filtering and categorization, reducing non-actionable alerts by 70\% and improving response time.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Waterloo Aerial Robotics Group} $|$ Autonomy Lead}{\emph{January 2024 -- Present}}
+\resumeItemListStart
+\resumeItem{Led a team of 10+ software developers that contributed to back-to-back victories at AEAC 2024 and 2025.}
+\resumeItem{Increased search area coverage efficiency by developing a multi-drone pathing system in Python with peer-to-peer networking, enabling parallel operations and collaborative area partitioning.}
+\resumeItem{Improved code reliability and team productivity by establishing robust quality control processes including pytest-based CI/CD pipelines and systematic code reviews.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{YTY Group} $|$ ERP/Web Development Intern}{\emph{May 2024 -- August 2024}}
+\resumeItemListStart
+\resumeItem{Engineered an employee attendance prediction system using TensorFlow and Pandas for data preprocessing, improving HR planning capabilities and reducing administrative workload.}
+\resumeItem{Created a Flutter-based expense claims mobile app with offline functionality and persistent login, reducing submission time and improving accessibility.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Maram} $|$ \emph{Rust, Git, Zellij}}{}
+\resumeItemListStart
+\resumeItem{Built a Rust CLI that automates git worktree management for parallel feature experimentation.}
+\resumeItem{Integrates Zellij to instantly provision isolated terminal workspaces for each branch variant.}
+\resumeItem{Implements logic to diff and cherry-pick changes across worktrees without manual git operations.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Linguini} $|$ \emph{TypeScript, React, Next.js, tRPC, Tailwind, PostgreSQL}}{}
+\resumeItemListStart
+\resumeItem{Built a multiplayer word-guessing game with group leaderboards and real-time progress tracking.}
+\resumeItem{Developed the main game loop on the frontend, ensuring smooth state management and responsive gameplay.}
+\resumeItem{Implemented tRPC routers for authentication, user management, and group management.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{TapCode} $|$ \emph{Flutter, Google Gemini}}{}
+\resumeItemListStart
+\resumeItem{Engineered an accessibility-focused application that converts speech to haptic morse code patterns using Flutter's vibration API.}
+\resumeItem{Integrated Google Gemini for text optimization, reducing transmission time while maintaining message integrity.}
+\resumeItem{Implemented bi-directional translation between speech and morse code, enabling two-way communication for users with visual or auditory impairments.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	\textbf{Languages: }{Python, C, C++, Go, Ruby, Rust, Typescript, Javascript, SQL, Assembly, Scala, Dart, Bash} \\
+	\textbf{Technologies: }{Rails, React, React Native, Next, Flask, GraphQL, gRPC, Tailwind, Nginx, Envoy, Linux} \\
+	{Terraform, Git, AWS, RaspberryPi, PyTorch, TensorFlow, Pandas, Kubernetes}
+	}}
+\end{itemize}
+
+\end{document}
