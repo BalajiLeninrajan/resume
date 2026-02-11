@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -29,7 +29,7 @@
 \addtolength{\evensidemargin}{-0.75in}
 \addtolength{\textwidth}{1.5in}
 \addtolength{\topmargin}{-0.75in}
-\addtolength{\textheight}{1.5in}
+\addtolength{\textheight}{1.0in}
 \setlength{\footskip}{4.1pt}
 
 \urlstyle{same}
@@ -51,7 +51,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small #4}
     \end{tabular*}
       \textbf{#5}  #6 \\
 \vspace{-2.5pt}
@@ -86,7 +86,7 @@
 \resumeSubheading
 {University of Waterloo}{2023 -- Present}
 {Bachelor of Software Engineering}{Waterloo, ON, Canada}
-{Coursework:}{Operating Systems, Compilers, Data Structures, Algorithms, Databases, Computer Architecture}
+{Coursework:}{\small Operating Systems, Compilers, Data Structures, Algorithms, Databases, Computer Architecture}
 \resumeSubHeadingListEnd
 
 
@@ -95,34 +95,32 @@
 \resumeProjectHeading
 {\textbf{Shopify} $|$ Production Engineering Intern $|$ Edge Infrastructure}{\emph{September 2025 -- December 2025}}
 \resumeItemListStart
-\resumeItem{Deployed Terraform-based Cloudflare WAF rules to safeguard service migrations, achieving 100\% monitoring coverage (up from 96.4\%) and ensuring zero-downtime transitions across critical services.}
-\resumeItem{Accelerated incident resolution by utilizing Prometheus for metrics analysis and documenting recovery procedures in new operational playbooks.}
-\resumeItem{Extended Shopify's Cloudflare Ruby gem to query custom hostnames and metadata.}
-\resumeItem{Supported migration from Nginx to Envoy, including porting Lua scripts to Go, to improve edge routing.}
+\resumeItem{}
+\resumeItem{}
+\resumeItem{}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Shopify} $|$ Software Engineering Intern $|$ Communications Platform Team}{\emph{January 2025 -- April 2025}}
 \resumeItemListStart
-\resumeItem{Contributed to a high-scale communications platform using React and Rails, orchestrating 4M+ monthly emails and push notifications across multiple Shopify services and teams.}
-\resumeItem{Implemented an approval workflow system for emails that empowers users in marketing automation, resulting in an 80\% reduction in faulty campaigns due to human error.}
-\resumeItem{Designed a polymorphic Rails concern for approval workflows, abstracting shared logic across multiple models, reducing duplicate code and improving maintainability.}
-\resumeItem{Optimized error monitoring by implementing intelligent Bugsnag filtering and categorization, reducing non-actionable alerts by 70\% and improving response time.}
+\resumeItem{Shipped to a high-scale communications platform using \textbf{React}, \textbf{Ruby on Rails}, and \textbf{GraphQL}, orchestrating \textbf{4M+ monthly} emails and push notifications across multiple Shopify services and teams.}
+\resumeItem{Designed an approval workflow system for emails using a \textbf{polymorphic Rails concern} that empowers users in marketing automation, resulting in an \textbf{80\% reduction} in faulty campaigns due to human error.}
+\resumeItem{Optimized error monitoring by implementing intelligent \textbf{Bugsnag} filtering and categorization, \textbf{reducing non-actionable alerts by 70\%} and improving response time.}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Waterloo Aerial Robotics Group} $|$ Autonomy Lead}{\emph{January 2024 -- Present}}
 \resumeItemListStart
-\resumeItem{Led a team of 10+ software developers that contributed to back-to-back victories at AEAC 2024 and 2025.}
-\resumeItem{Increased search area coverage efficiency by developing a multi-drone pathing system in Python with peer-to-peer networking, enabling parallel operations and collaborative area partitioning.}
-\resumeItem{Improved code reliability and team productivity by establishing robust quality control processes including pytest-based CI/CD pipelines and systematic code reviews.}
+\resumeItem{Led a team of \textbf{10+ software developers} that contributed to back-to-back victories at AEAC 2024 and 2025.}
+\resumeItem{}
+\resumeItem{}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{YTY Group} $|$ ERP/Web Development Intern}{\emph{May 2024 -- August 2024}}
 \resumeItemListStart
-\resumeItem{Engineered an employee attendance prediction system using TensorFlow and Pandas for data preprocessing, improving HR planning capabilities and reducing administrative workload.}
-\resumeItem{Created a Flutter-based expense claims mobile app with offline functionality and persistent login, reducing submission time and improving accessibility.}
+\resumeItem{Engineered an employee attendance prediction system using \textbf{TensorFlow} and \textbf{Pandas} for data preprocessing, improving HR planning capabilities and reducing administrative workload.}
+\resumeItem{Created a \textbf{Flutter}-based expense claims \textbf{mobile app} with offline functionality and persistent login, reducing submission time and improving accessibility.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -130,7 +128,7 @@
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Maram} $|$ \emph{Rust, Git, Zellij}}{}
+{\textbf{\href{https://github.com/BalajiLeninrajan/maram}{{\small \faIcon{external-link-alt}} Maram}} $|$ \emph{Rust, Git, Zellij}}{}
 \resumeItemListStart
 \resumeItem{Built a Rust CLI that automates git worktree management for parallel feature experimentation.}
 \resumeItem{Integrates Zellij to instantly provision isolated terminal workspaces for each branch variant.}
@@ -138,7 +136,7 @@
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Linguini} $|$ \emph{TypeScript, React, Next.js, tRPC, Tailwind, PostgreSQL}}{}
+{ \textbf{\href{https://github.com/BalajiLeninrajan/linguini}{{\small \faIcon{external-link-alt}} Linguini}} $|$ \emph{TypeScript, React, Next.js, tRPC, Tailwind, PostgreSQL}}{}
 \resumeItemListStart
 \resumeItem{Built a multiplayer word-guessing game with group leaderboards and real-time progress tracking.}
 \resumeItem{Developed the main game loop on the frontend, ensuring smooth state management and responsive gameplay.}
@@ -146,11 +144,11 @@
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{TapCode} $|$ \emph{Flutter, Google Gemini}}{}
+{\textbf{{\small \faIcon{external-link-alt}} ShowerScribe} $|$ \emph{}}{}
 \resumeItemListStart
-\resumeItem{Engineered an accessibility-focused application that converts speech to haptic morse code patterns using Flutter's vibration API.}
-\resumeItem{Integrated Google Gemini for text optimization, reducing transmission time while maintaining message integrity.}
-\resumeItem{Implemented bi-directional translation between speech and morse code, enabling two-way communication for users with visual or auditory impairments.}
+\resumeItem{}
+\resumeItem{}
+\resumeItem{}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -158,8 +156,8 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
 	\textbf{Languages: }{Python, C, C++, Go, Ruby, Rust, Typescript, Javascript, SQL, Assembly, Scala, Dart, Bash} \\
-	\textbf{Technologies: }{Rails, React, React Native, Next, Flask, GraphQL, gRPC, Tailwind, Nginx, Envoy, Linux} \\
-	{Terraform, Git, AWS, RaspberryPi, PyTorch, TensorFlow, Pandas, Kubernetes}
+	\textbf{Technologies: }{Ruby on Rails, React, React Native, Next, Django, GraphQL, gRPC, Tailwind, Nginx, Envoy} \\
+	{Terraform, Git, Linux, AWS, GCP, RaspberryPi, PyTorch, TensorFlow, Pandas, Kubernetes}
 	}}
 \end{itemize}
 
