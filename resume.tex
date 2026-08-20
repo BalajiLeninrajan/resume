@@ -130,28 +130,27 @@
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{\href{https://github.com/BalajiLeninrajan/maram}{{\small \faIcon{external-link-alt}} Maram}} $|$ \emph{Rust, Git}}{}
+{\textbf{\href{https://varchar.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} varchar}} $|$ \emph{Rust, WebAssembly, Preact, SQL}}{}
 \resumeItemListStart
-\resumeItem{Built a \textbf{Rust-based Git workflow engine} to eliminate context-switching overhead, automating the orchestration of parallel worktree ``sets'' for concurrent feature development}
-\resumeItem{Implemented \textbf{conflict-aware synchronization logic} using git2-rs to automate commit propagation (cherry-picking) and rebase management across divergent worktree variants}
-\resumeItem{Designed a \textbf{custom state-management layer} that persists Worktree metadata, allowing for recursive root-discovery and seamless CLI interactions across complex project hierarchies}
+\resumeItem{Built a \textbf{SQL engine in Rust} that keeps a whole database in one string, with a hand-written lexer, parser, type checker, and a planner that makes a regex do an index scan's job}
+\resumeItem{\textbf{Fuzzed} the engine against a reference implementation, checking random CRUD sequences and predicates with proptest for identical results}
+\resumeItem{Ported the engine to \textbf{WebAssembly}, drawing each query's match spans onto the live database string so the planner's choices are visible as they run}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{ \textbf{\href{https://github.com/BalajiLeninrajan/linguini}{{\small \faIcon{external-link-alt}} Linguini}} $|$ \emph{TypeScript, React, Next.js, tRPC, Tailwind, PostgreSQL}}{}
+{\textbf{\href{https://harness-racer.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} harness racer}} $|$ \emph{TypeScript, React, Node.js, Ink, WebSockets}}{}
 \resumeItemListStart
-\resumeItem{Shipped a full-stack multiplayer word-guessing platform using \textbf{Next.js, tRPC, and PostgreSQL}}
-\resumeItem{Created a semantic word-validation engine leveraging \textbf{PostgreSQL Recursive CTEs} to traverse hierarchical category graphs, enabling complex, multi-level word-to-category matching}
-\resumeItem{Architected a type-safe communication layer with \textbf{tRPC}, ensuring seamless state synchronization between a \textbf{responsive React frontend} and the backend for a low-latency game loop}
+\resumeItem{Integrated five coding agents behind one event contract, reconciling \textbf{JSON-RPC, ACP, and SDK streaming}}
+\resumeItem{Designed a benchmark that distrusts its own inputs, scoring providers under one \texttt{o200k\_base} tokenizer, taking medians over repeats, and dropping output too fast to measure}
+\resumeItem{Drove a \textbf{React dashboard and an Ink terminal UI} from one benchmark core, with no forked logic between them}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{\href{https://github.com/BalajiLeninrajan/Shower-Scribe}{\small \faIcon{external-link-alt}} ShowerScribe} $|$ \emph{Flask, Python, Bootstrap, SQL, HTML/CSS, Raspberry Pi}}{}
+{\textbf{\href{https://salt.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} salt}} $|$ \emph{TypeScript, Bun, React, Cloudflare Workers, KV}}{}
 \resumeItemListStart
-\resumeItem{Engineered an \textbf{AI-powered voice assistant} on Raspberry Pi for hands-free, intelligent note-taking}
-\resumeItem{Developed a \textbf{Flask web portal} to provide a centralized interface for organizing and playing back recordings}
-\resumeItem{Scripted a \textbf{Bash orchestration suite} to automate service initialization and optimize boot times for rapid startup}
-\resumeItem{Integrated Cohere LLM services for \textbf{automated summarization}, AI brainstorming, and \textbf{semantic search}}
+\resumeItem{Built a CLI that analyzes local coding-agent session history, scanning \textbf{15 GB across 7,800 files in 24 seconds} by streaming each file instead of loading it}
+\resumeItem{Turned each local scan into a \textbf{shareable link}, serving reports and the static site from one Cloudflare Worker with KV records that expire themselves after 30 days}
+\resumeItem{Shipped \textbf{native binaries for six platforms}, cross-compiled with Bun into one npm package per platform}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -160,7 +159,7 @@
 	\small{\item{
 	\textbf{Languages: }{Python, C, C++, Go, Ruby, Rust, TypeScript, JavaScript, SQL} \\
 	\textbf{Technologies: }{Ruby on Rails, React, React Native, Next.js, Django, GraphQL, Tailwind, Apache Spark} \\
-	{Nginx, Terraform, Git, Linux, AWS, GCP, Raspberry Pi, PyTorch, Pandas, Docker, Kubernetes}
+	{Nginx, Terraform, Git, Linux, AWS, GCP, WebAssembly, PyTorch, Pandas, Docker, Kubernetes}
 	}}
 \end{itemize}
 
