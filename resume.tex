@@ -132,25 +132,25 @@
 \resumeProjectHeading
 {\textbf{\href{https://varchar.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} varchar}} $|$ \emph{Rust, WebAssembly, Preact, SQL}}{}
 \resumeItemListStart
-\resumeItem{Built a \textbf{SQL engine in Rust} that keeps a whole database in one string, with a hand-written lexer, parser, type checker, and a planner that makes a regex do an index scan's job}
+\resumeItem{Built a \textbf{SQL engine in Rust} that keeps a whole database in one string, with a hand-rolled lexer, parser, type checker, and a planner that makes a regex do an index scan's job}
 \resumeItem{\textbf{Fuzzed} the engine against a reference implementation, checking random CRUD sequences and predicates with proptest for identical results}
 \resumeItem{Ported the engine to \textbf{WebAssembly}, drawing each query's match spans onto the live database string so the planner's choices are visible as they run}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://salt.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} salt}} $|$ \emph{Rust, TypeScript, React, Cloudflare Workers, KV}}{}
+\resumeItemListStart
+\resumeItem{Built a CLI that reads local coding-agent session history, scanning \textbf{16 GB across 7,900 files in under 4 seconds} and leaving the scan bound by disk, not CPU}
+\resumeItem{Turned each local scan into a \textbf{shareable link}, serving reports and the static site from one Cloudflare Worker with KV records that expire themselves after 30 days}
+\resumeItem{Shipped \textbf{binaries for six platforms} from one npm package, cutting the install to 2 MB with no bundled runtime}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{\href{https://harness-racer.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} harness racer}} $|$ \emph{TypeScript, React, Node.js, Ink, WebSockets}}{}
 \resumeItemListStart
 \resumeItem{Integrated five coding agents behind one event contract, reconciling \textbf{JSON-RPC, ACP, and SDK streaming}}
-\resumeItem{Designed a benchmark that distrusts its own inputs, scoring providers under one \texttt{o200k\_base} tokenizer, taking medians over repeats, and dropping output too fast to measure}
+\resumeItem{Designed a benchmark that distrusts its own inputs, scoring providers under one \texttt{o200k\_base} tokenizer, taking medians over repeats, and voiding runs where output arrived in one buffered burst instead of streaming}
 \resumeItem{Drove a \textbf{React dashboard and an Ink terminal UI} from one benchmark core, with no forked logic between them}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{\href{https://salt.balajileninrajan.dev}{{\small \faIcon{external-link-alt}} salt}} $|$ \emph{TypeScript, Bun, React, Cloudflare Workers, KV}}{}
-\resumeItemListStart
-\resumeItem{Built a CLI that analyzes local coding-agent session history, scanning \textbf{15 GB across 7,800 files in 24 seconds} by streaming each file instead of loading it}
-\resumeItem{Turned each local scan into a \textbf{shareable link}, serving reports and the static site from one Cloudflare Worker with KV records that expire themselves after 30 days}
-\resumeItem{Shipped \textbf{native binaries for six platforms}, cross-compiled with Bun into one npm package per platform}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
