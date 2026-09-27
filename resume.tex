@@ -95,18 +95,18 @@
 \resumeProjectHeading
 {\textbf{Finta} $|$ Software Engineering Intern}{\emph{May 2026 -- Present}}
 \resumeItemListStart
-\resumeItem{\textbf{Reduced dashboard load time by over 98\%}, from approximately 2 minutes to under 2 seconds, by replacing request-time aggregation with indexed PostgreSQL read models and rebuilding the interface in React}
-\resumeItem{Built a collaborative financial-modeling spreadsheet in \textbf{three weeks}, enabling finance teams to create live models from company accounting data using custom formulas, charts, templates, and version history}
+\resumeItem{\textbf{Reduced core product load time by over 98\%}, from approximately 2 minutes to under 2 seconds, by replacing request-time aggregation with indexed PostgreSQL read models and rebuilding the interface in React}
+\resumeItem{Built a collaborative financial-modeling spreadsheet in three weeks, enabling finance teams to create live models from company accounting data using custom formulas, charts, templates, and version history}
 \resumeItem{Architected Google Sheets--style \textbf{real-time collaboration} using a revisioned operation log, optimistic concurrency, WebSocket synchronization, reconnect recovery, and conflict-safe version restoration}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Shopify} $|$ Production Engineering Intern $|$ Edge Infrastructure}{\emph{September 2025 -- December 2025}}
 \resumeItemListStart
-\resumeItem{Engineered a high-scale SSL stack with \textbf{Ruby on Rails} and \textbf{Terraform}; migrated 10+ services to the new stack}
-\resumeItem{Resolved a \textbf{critical production outage} caused by 429-error spikes; Implemented kill switches and refactored core retry logic with intelligent backoffs to maintain site reliability}
-\resumeItem{Recovered \textbf{\$250,000+ annually} with an optimized maintenance task to \textbf{prune 10M+ dead hostnames efficiently}}
-\resumeItem{Authored operational playbooks and built \textbf{automated incident response tools} to find and fix domain and ssl job processing errors across edge infrastructure}
+\resumeItem{Moved \textbf{10+ services} onto a new SSL stack for merchant custom domains by building certificate issuance and renewal in \textbf{Ruby on Rails} on \textbf{Cloudflare}, \textbf{GCLB}, and \textbf{Google Certificate Manager}}
+\resumeItem{Raised monitoring coverage from \textbf{96.4\% to 100\%} with zero downtime during service migrations by deploying Cloudflare WAF rules through \textbf{Terraform}}
+\resumeItem{Resolved a \textbf{production outage} caused by Cloudflare API rate limiting by tracing the spikes with \textbf{Prometheus}, adding kill switches, and rewriting core retry logic with backoff; set up \textbf{Grafana} alerts to catch repeats}
+\resumeItem{Reduced false positives in edge bot detection by adding a \textbf{Lua} rule to the \textbf{Nginx} request pipeline}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -114,6 +114,7 @@
 \resumeItemListStart
 \resumeItem{Shipped features for a high-throughput communications platform using \textbf{React}, \textbf{Ruby on Rails}, and \textbf{GraphQL}, orchestrating \textbf{4M+ monthly} emails and push notifications across multiple Shopify services and teams}
 \resumeItem{Designed an approval workflow system for emails using a \textbf{polymorphic Rails concern} that empowers users in marketing automation, resulting in an \textbf{80\% reduction} in faulty campaigns due to human error}
+\resumeItem{Cut non-actionable alerts by \textbf{70\%} by adding filtering and categorization rules to \textbf{Bugsnag} error monitoring}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -157,10 +158,10 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-	\textbf{Languages: }{Python, C, C++, Go, Ruby, Rust, TypeScript, JavaScript, SQL} \\
-	\textbf{Technologies: }{Ruby on Rails, React, React Native, Next.js, Django, GraphQL, Tailwind, Apache Spark} \\
-	{Nginx, Terraform, Git, Linux, AWS, GCP, WebAssembly, PyTorch, Pandas, Docker, Kubernetes}
-	}}
+	      \textbf{Languages: }{Python, C, C++, Go, Ruby, Rust, TypeScript, JavaScript, SQL} \\
+	      \textbf{Technologies: }{Ruby on Rails, React, React Native, Next.js, Django, GraphQL, Tailwind, Apache Spark} \\
+	      {Nginx, Terraform, Git, Linux, AWS, GCP, WebAssembly, PyTorch, Pandas, Docker, Kubernetes}
+	      }}
 \end{itemize}
 
 \end{document}
